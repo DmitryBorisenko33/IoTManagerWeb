@@ -12,18 +12,49 @@
   </label>
   <ul class="menu__box">
     <li>
-      <a class="menu__item" href="/">{"setMain"}</a>
+      <a class="menu__item" href="/">{"Управление"}</a>
     </li>
     <li>
-      <a class="menu__item" href="/wifi">{"setWifi"}</a>
+      <a class="menu__item" href="/config">{"Конфигуратор"}</a>
     </li>
     <li>
-      <a class="menu__item" href="/mqtt">{"setmqtt"}</a>
+      <a class="menu__item" href="/connection">{"Подключение"}</a>
+    </li>
+    <li>
+      <a class="menu__item" href="/utilities">{"Утилиты"}</a>
+    </li>
+    <li>
+      <a class="menu__item" href="/log">{"Лог"}</a>
+    </li>
+    <li>
+      <a class="menu__item" href="/about">{"О проекте"}</a>
     </li>
   </ul>
 
   <ul class="menu__main">
     <Route path="/">
+      <!-- Card Container -->
+      <div class="grid place-items-center mx-2 my-20 sm:my-auto">
+        <!-- Card -->
+        <div class="w-11/12 p-12 sm:w-8/12 md:w-6/12 lg:w-5/12 2xl:w-4/12 px-6 py-10 sm:px-10 sm:py-6 bg-white rounded-lg shadow-md lg:shadow-lg">
+          <!-- Card Title -->
+          <h1 class="text-center text-lg text-gray-500 font-bold pb-6">Здесь будет dashboard</h1>
+        </div>
+      </div>
+    </Route>
+
+    <Route path="/config">
+      <!-- Card Container -->
+      <div class="grid place-items-center mx-2 my-20 sm:my-auto">
+        <!-- Card -->
+        <div class="w-11/12 p-12 sm:w-8/12 md:w-6/12 lg:w-5/12 2xl:w-4/12 px-6 py-10 sm:px-10 sm:py-6 bg-white rounded-lg shadow-md lg:shadow-lg">
+          <!-- Card Title -->
+          <h1 class="text-center text-lg text-gray-500 font-bold pb-6">Здесь будет конфигуратор</h1>
+        </div>
+      </div>
+    </Route>
+
+    <Route path="/connection">
       <!-- Card Container -->
       <div class="grid place-items-center mx-2 my-20 sm:my-auto">
         <!-- Card -->
