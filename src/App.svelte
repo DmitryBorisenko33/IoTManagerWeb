@@ -58,7 +58,7 @@
       <!-- Card Container -->
       <div class="grid place-items-center mx-2 my-20 sm:my-auto">
         <!-- Card -->
-        <div class="w-11/12 p-12 sm:w-8/12 md:w-6/12 lg:w-5/12 2xl:w-4/12 px-6 py-10 sm:px-10 sm:py-6 bg-white rounded-lg shadow-md lg:shadow-lg">
+        <div class="w-11/12 p-12 sm:w-8/12 my-10 md:w-6/12 lg:w-5/12 2xl:w-4/12 px-6 py-10 sm:px-10 sm:py-6 bg-white rounded-lg shadow-md lg:shadow-lg">
           <!-- Card Title -->
           <h1 class="text-center text-lg text-gray-500 font-bold pb-6">Подключение к WiFi роутеру</h1>
           <form class="w-full max-w-sm">
@@ -82,9 +82,71 @@
               <div class="md:w-1/3" />
               <label class="md:w-2/3 block text-gray-500 font-bold">
                 <input class="mr-2 leading-tight" type="checkbox" />
-                <span class="text-sm"> Send me your newsletter! </span>
+                <span class="text-sm"> Включить светодиод статуса подключения </span>
               </label>
             </div>
+            <div class="md:flex md:items-center">
+              <div class="md:w-1/3" />
+              <div class="md:w-2/3">
+                <button class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button"> Сохранить </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Card Container -->
+      <div class="grid place-items-center mx-2 my-20 sm:my-auto">
+        <!-- Card -->
+        <div class="w-11/12 p-12 sm:w-8/12 my-10 md:w-6/12 lg:w-5/12 2xl:w-4/12 px-6 py-10 sm:px-10 sm:py-6 bg-white rounded-lg shadow-md lg:shadow-lg">
+          <!-- Card Title -->
+          <h1 class="text-center text-lg text-gray-500 font-bold pb-6">Подключение к MQTT серверу</h1>
+          <form class="w-full max-w-sm">
+            <div class="md:flex md:items-center mb-6">
+              <div class="md:w-1/3">
+                <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name"> Сервер </label>
+              </div>
+              <div class="md:w-2/3">
+                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="your SSID" />
+              </div>
+            </div>
+
+            <div class="md:flex md:items-center mb-6">
+              <div class="md:w-1/3">
+                <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name"> Порт </label>
+              </div>
+              <div class="md:w-2/3">
+                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="your SSID" />
+              </div>
+            </div>
+
+            <div class="md:flex md:items-center mb-6">
+              <div class="md:w-1/3">
+                <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name"> Префикс </label>
+              </div>
+              <div class="md:w-2/3">
+                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="your SSID" />
+              </div>
+            </div>
+
+            <div class="md:flex md:items-center mb-6">
+              <div class="md:w-1/3">
+                <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name"> Пользователь </label>
+              </div>
+              <div class="md:w-2/3">
+                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="your SSID" />
+              </div>
+            </div>
+
+            <div class="md:flex md:items-center mb-6">
+              <div class="md:w-1/3">
+                <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-password"> Пароль </label>
+              </div>
+              <div class="md:w-2/3">
+                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-password" type="password" placeholder="******************" />
+              </div>
+            </div>
+
             <div class="md:flex md:items-center">
               <div class="md:w-1/3" />
               <div class="md:w-2/3">
@@ -126,7 +188,9 @@
   }
 
   .menu__main {
-    margin-top: 80px; /* насколько отступить сверху в главном меню */
+    top: 0; /* насколько отступить сверху в главном меню */
+    background-color: #eceff1;
+    /* box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);*/
   }
 
   .menu__btn {
