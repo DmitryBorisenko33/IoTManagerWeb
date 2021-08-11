@@ -6,32 +6,36 @@
 </script>
 
 <main>
-  <input id="menu__toggle" type="checkbox" />
-  <label class="menu__btn" for="menu__toggle">
-    <span />
-  </label>
-  <ul class="menu__box">
-    <li>
-      <a class="menu__item" href="/">{"Управление"}</a>
-    </li>
-    <li>
-      <a class="menu__item" href="/config">{"Конфигуратор"}</a>
-    </li>
-    <li>
-      <a class="menu__item" href="/connection">{"Подключение"}</a>
-    </li>
-    <li>
-      <a class="menu__item" href="/utilities">{"Утилиты"}</a>
-    </li>
-    <li>
-      <a class="menu__item" href="/log">{"Лог"}</a>
-    </li>
-    <li>
-      <a class="menu__item" href="/about">{"О проекте"}</a>
-    </li>
+  <ul class="menu__ham">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span />
+    </label>
+
+    <ul class="menu__box">
+      <li>
+        <a class="menu__item" href="/">{"Управление"}</a>
+      </li>
+      <li>
+        <a class="menu__item" href="/config">{"Конфигуратор"}</a>
+      </li>
+      <li>
+        <a class="menu__item" href="/connection">{"Подключение"}</a>
+      </li>
+      <li>
+        <a class="menu__item" href="/utilities">{"Утилиты"}</a>
+      </li>
+      <li>
+        <a class="menu__item" href="/log">{"Лог"}</a>
+      </li>
+      <li>
+        <a class="menu__item" href="/about">{"О проекте"}</a>
+      </li>
+    </ul>
   </ul>
 
-  <ul class="menu__main">
+  <!--<ul class="menu__main">-->
+  <div class="bg-cover bg-gray-50">
     <Route path="/">
       <!-- Card Container -->
       <div class="grid place-items-center mx-2 sm:my-auto">
@@ -155,7 +159,8 @@
         </div>
       </div>
     </Route>
-  </ul>
+  </div>
+  <!--</ul>-->
 </main>
 
 <style lang="postcss" global>
@@ -181,14 +186,33 @@
     visibility: visible;
     left: 0;
   }
-  #menu__toggle:checked ~ .menu__main {
-    margin-left: 150px; /* насколько сужать правую часть */
-  }
 
+  /*
+  #menu__toggle:checked ~ .menu__main {
+    margin-left: 150px; 
+    transition-duration: 0.25s;
+  }
+  */
+
+  /*
   .menu__main {
-    top: 0; /* насколько отступить сверху в главном меню */
-    background-color: #eceff1;
-    /* box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);*/
+    background-color: #dfdfdf;
+  }
+  */
+
+  /*
+  .menu__main {
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+  }
+  */
+
+  html {
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
   }
 
   .menu__btn {
@@ -225,7 +249,6 @@
   .menu__box {
     display: block;
     position: fixed;
-    /*z-index: 1;*/
     visibility: hidden;
     top: 0;
     left: -100%;
@@ -237,6 +260,10 @@
     background-color: #eceff1;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
     transition-duration: 0.25s;
+  }
+
+  .menu__ham {
+    position: fixed;
   }
 
   .menu__item {
