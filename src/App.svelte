@@ -6,6 +6,10 @@
 </script>
 
 <main>
+  <div class="fixed h-10 w-full bg-gray-100 shadow-md">
+    <b class="text-center" />
+  </div>
+
   <ul class="menu__ham">
     <input id="menu__toggle" type="checkbox" />
     <label class="menu__btn" for="menu__toggle">
@@ -34,133 +38,133 @@
     </ul>
   </ul>
 
-  <!--<ul class="menu__main">-->
-  <div class="bg-cover bg-gray-50">
-    <Route path="/">
-      <!-- Card Container -->
-      <div class="grid place-items-center mx-2 sm:my-auto">
-        <!-- Card -->
-        <div class="w-11/12 p-12 sm:w-8/12 md:w-6/12 lg:w-5/12 2xl:w-4/12 px-6 py-10 my-5 sm:px-10 sm:py-6 bg-white rounded-lg shadow-md lg:shadow-lg">
-          <!-- Card Title -->
-          <h1 class="text-center text-lg text-gray-500 font-bold pb-6">Здесь будет dashboard</h1>
-        </div>
-      </div>
-    </Route>
-
-    <Route path="/config">
-      <!-- Card Container -->
-      <div class="grid place-items-center mx-2 sm:my-auto">
-        <!-- Card -->
-        <div class="w-11/12 p-12 sm:w-8/12 md:w-6/12 lg:w-5/12 2xl:w-4/12 px-6 py-10 my-5 sm:px-10 sm:py-6 bg-white rounded-lg shadow-md lg:shadow-lg">
-          <!-- Card Title -->
-          <h1 class="text-center text-lg text-gray-500 font-bold pb-6">Здесь будет конфигуратор</h1>
-        </div>
-      </div>
-    </Route>
-
-    <Route path="/connection">
-      <!-- Card Container -->
-      <div class="grid place-items-center mx-2 sm:my-auto">
-        <!-- Card -->
-        <div class="w-11/12 p-12 sm:w-8/12 md:w-6/12 lg:w-5/12 2xl:w-4/12 px-6 py-10 my-5 sm:px-10 sm:py-6 bg-white rounded-lg shadow-md lg:shadow-lg">
-          <!-- Card Title -->
-          <h1 class="text-center text-lg text-gray-500 font-bold pb-6">Подключение к WiFi роутеру</h1>
-
-          <div class="md:flex md:items-center mb-6">
-            <div class="md:w-1/3">
-              <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name"> Сеть </label>
-            </div>
-            <div class="md:w-2/3">
-              <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="your SSID" />
-            </div>
-          </div>
-          <div class="md:flex md:items-center mb-6">
-            <div class="md:w-1/3">
-              <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-password"> Пароль </label>
-            </div>
-            <div class="md:w-2/3">
-              <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-password" type="password" placeholder="******************" />
-            </div>
-          </div>
-          <div class="md:flex md:items-center mb-6">
-            <div class="md:w-1/3" />
-            <label class="md:w-2/3 block text-gray-500 font-bold">
-              <input class="mr-2 leading-tight" type="checkbox" />
-              <span class="text-sm"> Включить светодиод статуса подключения </span>
-            </label>
-          </div>
-          <div class="md:flex md:items-center">
-            <div class="md:w-1/3" />
-            <div class="md:w-2/3">
-              <button class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button"> Сохранить </button>
-            </div>
+  <ul class="menu__main">
+    <div class="bg-cover bg-gray-50 pt-16">
+      <Route path="/">
+        <!-- Card Container -->
+        <div class="grid place-items-center mx-2 sm:my-auto">
+          <!-- Card -->
+          <div class="w-11/12 p-12 sm:w-8/12 md:w-6/12 lg:w-5/12 2xl:w-4/12 px-6 py-10 my-5 sm:px-10 sm:py-6 bg-white rounded-lg shadow-md lg:shadow-lg">
+            <!-- Card Title -->
+            <h1 class="text-center text-lg text-gray-500 font-bold pb-6">Здесь будет dashboard</h1>
           </div>
         </div>
-      </div>
+      </Route>
 
-      <!-- Card Container -->
-      <div class="grid place-items-center mx-2 sm:my-auto">
-        <!-- Card -->
-        <div class="w-11/12 p-12 sm:w-8/12 md:w-6/12 lg:w-5/12 2xl:w-4/12 px-6 py-10 my-5 sm:px-10 sm:py-6 bg-white rounded-lg shadow-md lg:shadow-lg">
-          <!-- Card Title -->
-          <h1 class="text-center text-lg text-gray-500 font-bold pb-6">Подключение к MQTT серверу</h1>
-
-          <div class="md:flex md:items-center mb-6">
-            <div class="md:w-1/3">
-              <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name"> Сервер </label>
-            </div>
-            <div class="md:w-2/3">
-              <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="your SSID" />
-            </div>
+      <Route path="/config">
+        <!-- Card Container -->
+        <div class="grid place-items-center mx-2 sm:my-auto">
+          <!-- Card -->
+          <div class="w-11/12 p-12 sm:w-8/12 md:w-6/12 lg:w-5/12 2xl:w-4/12 px-6 py-10 my-5 sm:px-10 sm:py-6 bg-white rounded-lg shadow-md lg:shadow-lg">
+            <!-- Card Title -->
+            <h1 class="text-center text-lg text-gray-500 font-bold pb-6">Здесь будет конфигуратор</h1>
           </div>
+        </div>
+      </Route>
 
-          <div class="md:flex md:items-center mb-6">
-            <div class="md:w-1/3">
-              <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name"> Порт </label>
-            </div>
-            <div class="md:w-2/3">
-              <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="your SSID" />
-            </div>
-          </div>
+      <Route path="/connection">
+        <!-- Card Container -->
+        <div class="grid place-items-center mx-2 sm:my-auto">
+          <!-- Card -->
+          <div class="w-11/12 p-12 sm:w-8/12 md:w-6/12 lg:w-5/12 2xl:w-4/12 px-6 py-10 my-5 sm:px-10 sm:py-6 bg-white rounded-lg shadow-md lg:shadow-lg">
+            <!-- Card Title -->
+            <h1 class="text-center text-lg text-gray-500 font-bold pb-6">Подключение к WiFi роутеру</h1>
 
-          <div class="md:flex md:items-center mb-6">
-            <div class="md:w-1/3">
-              <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name"> Префикс </label>
+            <div class="md:flex md:items-center mb-6">
+              <div class="md:w-1/3">
+                <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name"> Сеть </label>
+              </div>
+              <div class="md:w-2/3">
+                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="your SSID" />
+              </div>
             </div>
-            <div class="md:w-2/3">
-              <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="your SSID" />
+            <div class="md:flex md:items-center mb-6">
+              <div class="md:w-1/3">
+                <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-password"> Пароль </label>
+              </div>
+              <div class="md:w-2/3">
+                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-password" type="password" placeholder="******************" />
+              </div>
             </div>
-          </div>
-
-          <div class="md:flex md:items-center mb-6">
-            <div class="md:w-1/3">
-              <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name"> Пользователь </label>
+            <div class="md:flex md:items-center mb-6">
+              <div class="md:w-1/3" />
+              <label class="md:w-2/3 block text-gray-500 font-bold">
+                <input class="mr-2 leading-tight" type="checkbox" />
+                <span class="text-sm"> Включить светодиод статуса подключения </span>
+              </label>
             </div>
-            <div class="md:w-2/3">
-              <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="your SSID" />
-            </div>
-          </div>
-
-          <div class="md:flex md:items-center mb-6">
-            <div class="md:w-1/3">
-              <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-password"> Пароль </label>
-            </div>
-            <div class="md:w-2/3">
-              <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-password" type="password" placeholder="******************" />
-            </div>
-          </div>
-
-          <div class="md:flex md:items-center">
-            <div class="md:w-1/3" />
-            <div class="md:w-2/3">
-              <button class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button"> Сохранить </button>
+            <div class="md:flex md:items-center">
+              <div class="md:w-1/3" />
+              <div class="md:w-2/3">
+                <button class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button"> Сохранить </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </Route>
-  </div>
-  <!--</ul>-->
+
+        <!-- Card Container -->
+        <div class="grid place-items-center mx-2 sm:my-auto">
+          <!-- Card -->
+          <div class="w-11/12 p-12 sm:w-8/12 md:w-6/12 lg:w-5/12 2xl:w-4/12 px-6 py-10 my-5 sm:px-10 sm:py-6 bg-white rounded-lg shadow-md lg:shadow-lg">
+            <!-- Card Title -->
+            <h1 class="text-center text-lg text-gray-500 font-bold pb-6">Подключение к MQTT серверу</h1>
+
+            <div class="md:flex md:items-center mb-6">
+              <div class="md:w-1/3">
+                <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name"> Сервер </label>
+              </div>
+              <div class="md:w-2/3">
+                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="your SSID" />
+              </div>
+            </div>
+
+            <div class="md:flex md:items-center mb-6">
+              <div class="md:w-1/3">
+                <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name"> Порт </label>
+              </div>
+              <div class="md:w-2/3">
+                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="your SSID" />
+              </div>
+            </div>
+
+            <div class="md:flex md:items-center mb-6">
+              <div class="md:w-1/3">
+                <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name"> Префикс </label>
+              </div>
+              <div class="md:w-2/3">
+                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="your SSID" />
+              </div>
+            </div>
+
+            <div class="md:flex md:items-center mb-6">
+              <div class="md:w-1/3">
+                <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name"> Пользователь </label>
+              </div>
+              <div class="md:w-2/3">
+                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="your SSID" />
+              </div>
+            </div>
+
+            <div class="md:flex md:items-center mb-6">
+              <div class="md:w-1/3">
+                <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-password"> Пароль </label>
+              </div>
+              <div class="md:w-2/3">
+                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-password" type="password" placeholder="******************" />
+              </div>
+            </div>
+
+            <div class="md:flex md:items-center">
+              <div class="md:w-1/3" />
+              <div class="md:w-2/3">
+                <button class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button"> Сохранить </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Route>
+    </div>
+  </ul>
 </main>
 
 <style lang="postcss" global>
@@ -194,36 +198,15 @@
   }
   */
 
-  /*
-  .menu__main {
-    background-color: #dfdfdf;
-  }
-  */
-
-  /*
-  .menu__main {
-    min-width: 100%;
-    min-height: 100%;
-    position: relative;
-  }
-  */
-
-  html {
-    height: 100%;
-  }
-  body {
-    min-height: 100%;
-  }
-
   .menu__btn {
     display: flex;
     align-items: center;
     position: fixed;
     z-index: 1;
-    top: 20px;
+    top: 10px;
     left: 20px;
-    width: 26px;
-    height: 26px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
   }
 
@@ -278,5 +261,18 @@
   }
   .menu__item:hover {
     background-color: #cfd8dc;
+  }
+
+  .upper__bar {
+    background-color: rgba(51, 51, 51, 0.144);
+    height: 70px;
+    position: fixed;
+    z-index: -1;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.2);
   }
 </style>
