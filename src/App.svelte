@@ -1,5 +1,5 @@
 <script>
-  //роутер =========================================
+  //роутер ==========================================
   import { Route, router, active } from "tinro";
   router.mode.hash(); // enables hash navigation method
   //router.mode.memory(); // enables in-memory navigation method
