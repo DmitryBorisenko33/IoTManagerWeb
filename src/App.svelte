@@ -143,7 +143,6 @@
       <Route path="/test">
         <Card title="Test section" />
       </Route>
-
     </div>
   </ul>
 </main>
