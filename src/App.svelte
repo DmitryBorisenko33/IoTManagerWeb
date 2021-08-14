@@ -36,6 +36,9 @@
       <li>
         <a class="menu__item" href="/about">{"О проекте"}</a>
       </li>
+      <li>
+        <a class="menu__item" href="/test">{"Test"}</a>
+      </li>
     </ul>
   </ul>
 
@@ -136,6 +139,11 @@
           </div>
         </Card>
       </Route>
+
+      <Route path="/test">
+        <Card title="Test section" />
+      </Route>
+
     </div>
   </ul>
 </main>
