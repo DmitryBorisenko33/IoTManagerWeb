@@ -4,6 +4,9 @@
   router.mode.hash(); // enables hash navigation method
   //router.mode.memory(); // enables in-memory navigation method
   import Card from "./Card.svelte";
+  import Input from "./Input.svelte";
+  let text = "";
+  const handleChange = value => (text = value); //
 </script>
 
 <main>
@@ -141,7 +144,10 @@
       </Route>
 
       <Route path="/test">
-        <Card title="Test section" />
+        <Card title="Testing card">
+          <Input onChange={handleChange} title="Input text" />
+          <h1>{text}</h1>
+        </Card>
       </Route>
     </div>
   </ul>
