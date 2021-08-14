@@ -5,8 +5,10 @@
   //router.mode.memory(); // enables in-memory navigation method
   import Card from "./Card.svelte";
   import Input from "./Input.svelte";
-  let text = "";
-  const handleChange = value => (text = value); //
+  let text1 = "";
+  let text2 = "";
+  const handleChange1 = value => (text1 = value); 
+  const handleChange2 = value => (text2 = value);
 </script>
 
 <main>
@@ -144,9 +146,13 @@
       </Route>
 
       <Route path="/test">
-        <Card title="Testing card">
-          <Input onChange={handleChange} title="Input text" />
-          <h1>{text}</h1>
+        <Card title="Testing card1">
+          <Input onChange={handleChange1} title="Input text1" />
+          <h1>{text1}</h1>
+        </Card>
+        <Card title="Testing card2">
+          <Input onChange={handleChange2} title="Input text2" />
+          <h1>{text2}</h1>
         </Card>
       </Route>
     </div>
